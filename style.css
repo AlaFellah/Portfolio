@@ -1,0 +1,142 @@
+html body {
+    background-color: #282A2C;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    margin-left: 200px;
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+.nav_list {
+    margin-left: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 450px;
+    font-size: large;
+    margin-top: 20px;
+    color: white;
+}
+
+main {
+    padding-top: 40px;
+}
+
+.hero {
+    display: flex;
+    background-color: #1B1C1D;
+    height: 450px;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding-top: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border: 0.5px solid gray;
+}
+
+@media (max-width: 1199.98px) {
+    .hero {
+        min-height: 800px;
+    }
+    .summary {
+        align-items: center;
+    }
+}
+@media (max-width: 576px) {
+    .github{
+        margin-top: 20px;
+    }
+    .instagram{
+        margin-top: 20px;
+    }
+}
+
+#portrait-image {
+    width: 250px;   
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.summary {
+    background-color: #1B1C1D;
+    color: white;
+}
+
+.media_buttons {
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+.linkedin {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    border-radius: 30px;
+    background-color: #1B1C1D;
+    border: 1px solid gray;
+    color: white;
+    width: 125px;
+}
+
+.linkes {
+    text-decoration: none;
+    color: white;
+}
+
+.github {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border-radius: 30px;
+    background-color: #1B1C1D;
+    border: 1px solid gray;
+    color: white;
+    width: 125px;
+}
+
+.instagram {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #1B1C1D;
+    border: 1px solid gray;
+    color: white;
+    width: 125px;
+}
+
+.logo {
+    padding: 0px;
+    margin: 0px;
+    width: 35px;
+    height: 35px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+input, textarea {
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+  }
