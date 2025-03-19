@@ -134,9 +134,119 @@ main {
     justify-content: center;
 }
 
-input, textarea {
+.projects{
+    /* background-color: rgba(235,235,230,1);
+    
+    border-color: rgba(0, 0, 0, .05); */
+    margin-top:30px;
+}
+
+/* input, textarea {
+    border-radius: 30px;
     border: none;
-    outline: none;
+    border: 1px solid gray;
     background: none;
     box-shadow: none;
-  }
+  } */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.wrapper{
+    width: 900px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 30px 40px;
+    
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    
+}
+.wrapper h2{
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+.wrapper .input-box{
+
+    width: 50%;
+    height: 50px;
+    margin: 30px 0px;
+}
+
+.input-box input{
+    width: 95%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 252, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    
+}
+.input-box input::placeholder {
+    color: #fff;
+}
+.wrapper .text-box{
+    width: 100%;
+    height: 100px;
+    margin: 0px 0px 20px 0px;
+}
+.text-box textarea{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 252, 255, .2);
+    border-radius: 30px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    resize: none;
+
+}
+.wrapper .btn{
+    width: 40%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline:none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    
+}
+.wrapper .input-container{
+    display: flex; 
+    justify-content: right;
+}
+.email-box{display: flex;
+justify-content: end;}
+.btn-box{
+    display: flex;
+    justify-content: center;
+}
+
+.view-box{
+    display: flex;
+    justify-content: center ;
+    
+}
+.view{
+    color: white;
+}
