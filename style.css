@@ -1,5 +1,5 @@
 html body {
-        background-color:  rgba(235, 235, 230, 1);
+        background-color:  #212127;
         }
 
 body {
@@ -26,13 +26,22 @@ main {
 .hero {
 
     /* background-color: rgb(20, 21, 21); */
-    height: 800px;
+    height: 1600px;
     border-radius: 30px;
     padding-top: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     border: 0.5px solid ;
     background-color: rgb(20, 21, 21);
 
+}
+
+.description{
+    text-align: start;
+    font-size: 23px;
+    
+}
+h2{
+    text-align: start;
 }
 
 .stack-container{
@@ -64,8 +73,8 @@ main {
 }
 
 #portrait-image {
-    width: 250px;   
-    height: 250px;
+    width: 280px;   
+    height: 280px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -73,6 +82,15 @@ main {
 .summary {
     background-color: transparent;
     color: white;
+    margin-top: 150px;
+}
+
+.my-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    height: 400px;
 }
 
 .media_buttons {
@@ -232,10 +250,6 @@ main {
 }
 .email-box{display: flex;
 justify-content: end;}
-.btn-box{
-    display: flex;
-    justify-content: center;
-}
 
 .view-box{
     display: flex;
@@ -331,5 +345,106 @@ justify-content: end;}
 .stack-container {
     display: flex;
     justify-content: center;
+    margin-top: 150px;
+}
+
+ 
+
+
+.skill-card {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+
+}
+@media(prefers-reduced-motion) {
+    .skill-card{
+        transition: none;
+    }
+}
+
+.skill-card:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.skill-card:nth-child(3){
+    transition-delay: 300ms;
+}
+.skill-card:nth-child(4){
+    transition-delay: 500ms;
+}
+.skill-card:nth-child(5){
+    transition-delay: 600ms;
+}
+.skill-card:nth-child(6){
+    transition-delay: 700ms;
+}
+.project_card{
+    width: 300px;
+    height: 380px;
+    background-color: #212127;
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s;
+    border-radius: 5px;
+}
+.project_card:hover{
+    transform: scale(1.15);
+}
+
+.project-pic{
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.project-description{
+    padding: 10px;
+    color: #fff;
+    text-align: start;
+
+}
+.projects{
+    display: flex;
+    justify-content: center;
+}
+.project-header{
+    color: white;
     margin-top: 100px;
+
+}
+
+.bttn{
+    width: 40%; /* Make sure it's wide enough */
+    height: 30px; /* Increase height to allow for the rounded corners to show */
+    border-radius: 5px; 
+    background: #fff;
+    border: none;
+    outline: none;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+
+
+}
+.card-img-top{height: 80px;}
+.project-title{
+    text-align: start;
+    color: #fff;
+    padding:10px 0px 0px 10px;
+}
+.stack-title{
+    color: #fff;
+    margin-bottom: 30px;
 }
